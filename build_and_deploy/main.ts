@@ -20,11 +20,9 @@ export async function main() {
                 await OperationManager.DeployArtifacts();
                 break;
             case OPERATIONS.validateDeploy :
-                await bundle_manager.invokeBundle();
                 await OperationManager.ValidateAndDeploy();
                 break;
             case OPERATIONS.validate:
-                await bundle_manager.invokeBundle();
                 await OperationManager.ValidateArtifacts();
                 break;
             case 'default':
